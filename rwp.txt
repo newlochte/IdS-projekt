@@ -1,0 +1,23 @@
+
+
+Description:
+	A mathematical pendulum driven by a reaction wheel is considered. The force is the voltage applied to the motor driving the wheel. 
+The available measurement signals are the angular deflection of the pendulum arm and the angular speed of the motor. 
+The forcing signal was Gaussian-distributed noise.
+	An example of a nonlinear model is included in point 2 of the attached paper.
+
+Sampling frequency: 100 Hz
+Inputs:
+	u: normalized voltage signal for DC motor
+Outputs:
+	y: pendulum arm position
+	w: DC motor velocity
+Columns:
+	Column 1: voltage 		u
+	Column 2: pendulum arm position	y
+	Column 3: DC motor velocity	w
+Category:
+	mechanical systems
+Comments:
+	-
+	

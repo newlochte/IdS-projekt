@@ -1,0 +1,3 @@
+Bierzemy pod uwagę tylko położenie ramienia y (pierwsze wyjście) czyli:
+	Column 1: voltage 		u
+	Column 2: pendulum arm position	y
