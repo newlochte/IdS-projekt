@@ -10,8 +10,11 @@ pliki wykonywane są w sekwencji
 ## Podział danych
 
 - 01 - podział danych na dane
-> REQUIRES RWP.dat
-> PRODUVES training_data.dat, test_data.dat
+> REQUIRES RWP.dat  
+> PRODUCES dane_identyfikacyjne.mat, dane_weryfikacyjne.mat  
+> Parametry:
+>  - część danych wykorzystanych do identyfikacji
+>  - czy dane identyfikacyjne są z początku czy końca danych zmierzonych
 
 ## Analiza nieparametryczna
 
