@@ -4,22 +4,22 @@ pliki wykonywane są w sekwencji
 
 ## Analiza danych
 
-- 00 - analiza zebranych danych pomiarowych
-> REQUIRES RWP.dat
+- 00 - analiza zebranych danych pomiarowych  
+REQUIRES RWP.dat
 
 ## Podział danych
 
 - 01 - podział danych na dane
-> REQUIRES RWP.dat  
-> PRODUCES dane_identyfikacyjne.mat, dane_weryfikacyjne.mat  
-> Parametry:
->  - część danych wykorzystanych do identyfikacji
->  - czy dane identyfikacyjne są z początku czy końca danych zmierzonych
+REQUIRES RWP.dat  
+PRODUCES dane_identyfikacyjne.mat, dane_weryfikacyjne.mat  
+Parametry:
+  - część danych wykorzystanych do identyfikacji
+  - czy dane identyfikacyjne są z początku czy końca danych zmierzonych
 
 ## Analiza nieparametryczna
 
-- 02 - analiza częstotliwościowa pomagająca w określeniu rzędu obiektu. Podejście BLACK-BOX
-> REQUIRES RWP.dat, Covar.m
+- 02 - analiza częstotliwościowa pomagająca w określeniu rzędu obiektu. Podejście BLACK-BOX  
+REQUIRES RWP.dat, Covar.m
 
 ## Analiza parametryczna
 
@@ -31,7 +31,10 @@ pliki wykonywane są w sekwencji
 
 - 04 - dyskretyzacja zapropowanego modelu w artykule [Nonlinear analysis and control of a reaction wheel pendulum:
 Lyapunov-based approach](https://www.sciencedirect.com/science/article/pii/S221509861831574X)
-- 05 - model czasu ciągłego przez zastosowanie filtru SVF
+- 05 - model czasu ciągłego przez zastosowanie filtru SVF  
+REQUIRES [dane_identyfikacyjne.mat](#podział-danych)  
+PRODUCES parametry_SVF.mat
+> dla tego filtru modelu zakładamy strukturę jak w punkcie wyżej czyli ypp = a sin(y) - bu
 
 ## Weryfikacja modelu
 
