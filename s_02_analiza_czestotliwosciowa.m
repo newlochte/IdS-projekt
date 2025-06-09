@@ -122,40 +122,40 @@ grid on;
 title('Wykres Nyquista estymatora wygładzonego');
 % wykresy bodego
 figure
-subplot(2,2,1)
-semilogx(omegam(1:ind), LmETFE(1:ind))
-grid on;
-title('Wykres logarytmu modułu wg estymatora ETFE');
-xlabel('\omega [rad/s]');
-ylabel('Lm [dB]');
-% legend({'sin(x)', 'cos(x)'}, 'Location', 'best');
-xlim([0 10]);
-% ylim([-1.2 1.2]);
+% subplot(2,2,1)
+% semilogx(omegam(1:ind), LmETFE(1:ind))
+% grid on;
+% title('Wykres logarytmu modułu wg estymatora ETFE');
+% xlabel('\omega [rad/s]');
+% ylabel('Lm [dB]');
+% % legend({'sin(x)', 'cos(x)'}, 'Location', 'best');
+% xlim([0 10]);
+% % ylim([-1.2 1.2]);
 
-subplot(2,2,2)
+subplot(2,1,1)
 semilogx(omega(1:ind), LmhatGs(1:ind))
 grid on;
-title('Wykres logarytmu modułu wg estymatora wygładzonego');
+title('Wykres logarytmu modułu wg estymatora');
 xlabel('\omega [rad/s]');
 ylabel('Lm [dB]');
 % legend({'sin(x)', 'cos(x)'}, 'Location', 'best');
 xlim([0 10]);
 % ylim([-1.2 1.2]);
 
-subplot(2,2,3)
-semilogx(omegam(1:ind), ArgETFE(1:ind))
-grid on;
-title('Wykres przesunięcia kątowego wg estymatora ETFE');
-xlabel('\omega [rad/s]');
-ylabel('Arg [deg]');
-% legend({'sin(x)', 'cos(x)'}, 'Location', 'best');
-xlim([0 10]);
-% ylim([-1.2 1.2]);
+% subplot(2,2,3)
+% semilogx(omegam(1:ind), ArgETFE(1:ind))
+% grid on;
+% title('Wykres przesunięcia kątowego wg estymatora ETFE');
+% xlabel('\omega [rad/s]');
+% ylabel('Arg [deg]');
+% % legend({'sin(x)', 'cos(x)'}, 'Location', 'best');
+% xlim([0 10]);
+% % ylim([-1.2 1.2]);
 
-subplot(2,2,4)
+subplot(2,1,2)
 semilogx(omega(1:ind), ArghatGs(1:ind))
 grid on;
-title('Wykres przesunięcia kątowego wg estymatora wygładzonego');
+title('Wykres przesunięcia kątowego wg estymatora');
 xlabel('\omega [rad/s]');
 ylabel('Arg [deg]');
 % legend({'sin(x)', 'cos(x)'}, 'Location', 'best');

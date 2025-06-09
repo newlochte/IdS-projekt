@@ -1,2 +1,6 @@
 *.asv
 *.mat
+*.slxc
+*.autosave
+/slprj
+/zrzuty
